@@ -1,0 +1,38 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "debug",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				{
+					"value": "-std=c++17",
+					"quoting": "weak"
+				},
+				{
+					"value": "-o game.exe",
+					"quoting": "weak"
+				},
+				{
+					"value": "main.cpp renderer/renderer.cpp resman/resman.cpp logic/ingame.cpp logic/events/eventhandler.cpp",
+					"quoting": "weak"
+				},
+				{
+					"value": "-I. -I\"F:\\Programming\\SFML-2.5.1\\include\"",
+					"quoting": "weak"
+				},
+				{
+					"value": "-L\"F:\\Programming\\SFML-2.5.1\\lib\" -Llib -lsfml-system-d -lsfml-window-d -lsfml-graphics-d-2 -lsfml-audio-d-2 -lsfml-network-d",
+					"quoting": "weak"
+				}
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
