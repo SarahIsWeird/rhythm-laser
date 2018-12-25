@@ -10,11 +10,11 @@ namespace ingame {
 			currentPos = 1;
 		} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::F)) {
 			currentPos = 2;
-		} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::H)) {
-			currentPos = 3;
 		} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::J)) {
-			currentPos = 4;
+			currentPos = 3;
 		} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::K)) {
+			currentPos = 4;
+		} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::L)) {
 			currentPos = 5;
 		}
 	}
