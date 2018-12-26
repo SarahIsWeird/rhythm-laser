@@ -3,9 +3,9 @@
 ## Table of Contents
 
 1. [Introduction](#Introduction)
-2. [The Song Index format](#The_Song_Index_format_info) 
+2. [The Song Index format](#The-Song-Index-format-info) 
    1. [Values](#Values) 
-   2. [General Structure](#General_structure)  
+   2. [General Structure](#General-structure)  
 
 ## Introduction
 
