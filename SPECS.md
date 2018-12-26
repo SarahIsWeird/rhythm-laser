@@ -3,9 +3,10 @@
 ## Table of Contents
 
 1. [Introduction](#Introduction_7)
-2. [The Song Index format](#The_Song_Index_format_info_13)
-2.1 [Values](#Values_18)
-2.2 [General Structure](#General_structure_37)
+2. [The Song Index format](#The_Song_Index_format_info_13) 
+   1. [Values](#Values_18) 
+   2. [General Structure](#General_structure_37)  
+3. Fuckeroo
 
 ## Introduction
 
@@ -38,5 +39,12 @@ The Song Index format encodes general information about the song charts, such as
 ### General structure
 
 ```
-/SI_DIST/CHART_N/CHART_N_SEP/1CHARTPATH_LEN/1CHARTPATH_LEN_SEP/1CHARTPATH/1CHARTPATH_SEP/2CHARTPATH_LEN/2CHARTPATH_LEN_SEP/2CHARTPATH/2CHARTPATH_SEP/nCHARTPATH_LEN/nCHARTPATH_LEN_SEP/nCHARTPATH/nCHARTPATH_SEP/CHART_SEP/MENUBG_LEN/MENUBG_LEN_SEP/MENUBG/MENUBG_SEP/EOF/
+/SI_DIST/
+/CHART_N/CHART_N_SEP/
+/1CHARTPATH_LEN/1CHARTPATH_LEN_SEP/1CHARTPATH/1CHARTPATH_SEP/
+/2CHARTPATH_LEN/2CHARTPATH_LEN_SEP/2CHARTPATH/2CHARTPATH_SEP/
+/nCHARTPATH_LEN/nCHARTPATH_LEN_SEP/nCHARTPATH/nCHARTPATH_SEP/
+/CHART_SEP/
+/MENUBG_LEN/MENUBG_LEN_SEP/MENUBG/MENUBG_SEP/
+/EOF/
 ```
