@@ -3,6 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include <logic/events/eventhandler.hpp>
+
 namespace ingame {
 	int tick(void);
 

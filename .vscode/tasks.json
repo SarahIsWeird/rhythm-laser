@@ -17,7 +17,7 @@
 					"quoting": "weak"
 				},
 				{
-					"value": "main.cpp renderer/renderer.cpp resman/resman.cpp logic/ingame.cpp logic/events/eventhandler.cpp",
+					"value": "main.cpp renderer/renderer.cpp resman/resman.cpp logic/ingame.cpp logic/songloader.cpp logic/events/eventhandler.cpp",
 					"quoting": "weak"
 				},
 				{

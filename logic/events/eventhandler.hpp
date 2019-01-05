@@ -8,6 +8,8 @@
 namespace eventhandler {
 	int registerCleanupFunction(void (*function)(void));
 
+	int pushEvent(sf::Event::EventType event);
+
 	int handleEvents(sf::RenderWindow *window);
 
 	void close(sf::RenderWindow *window);
