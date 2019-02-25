@@ -1,6 +1,4 @@
 {
-	// See https://go.microsoft.com/fwlink/?LinkId=733558
-	// for the documentation about the tasks.json format
 	"version": "2.0.0",
 	"tasks": [
 		{
@@ -17,7 +15,7 @@
 					"quoting": "weak"
 				},
 				{
-					"value": "main.cpp renderer/renderer.cpp resman/resman.cpp logic/ingame.cpp logic/songloader.cpp logic/events/eventhandler.cpp",
+					"value": "main.cpp renderer/renderer.cpp resman/resman.cpp logic/ingame.cpp logic/songloader.cpp logic/laser.cpp logic/events/eventhandler.cpp",
 					"quoting": "weak"
 				},
 				{
@@ -25,7 +23,7 @@
 					"quoting": "weak"
 				},
 				{
-					"value": "-L\"F:\\Programming\\SFML-2.5.1\\lib\" -Llib -lsfml-system-d -lsfml-window-d -lsfml-graphics-d-2 -lsfml-audio-d-2 -lsfml-network-d",
+					"value": "-L\"F:\\Programming\\SFML-2.5.1\\lib\" -lsfml-system-d -lsfml-window-d -lsfml-graphics-d-2 -lsfml-audio-d-2 -lsfml-network-d",
 					"quoting": "weak"
 				}
 			],

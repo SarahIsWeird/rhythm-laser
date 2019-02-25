@@ -1,4 +1,5 @@
 #include <logic/events/eventhandler.hpp>
+#include <logic/ingame.hpp>
 
 namespace eventhandler {
 	std::vector<void (*)(void)> functions;
@@ -27,8 +28,14 @@ namespace eventhandler {
 		localQueue.clear();
 
 		while ((*window).pollEvent(event)) {
-			if (event.type == sf::Event::Closed)
-				close(window);
+			switch (event.type) {
+				case sf::Event::Closed:
+					close(window);
+					break;
+				case sf::Event::KeyPressed:
+					ingame::changeShipPos(event.key.code);
+					break;
+			}
 		}
 
 		return 0;

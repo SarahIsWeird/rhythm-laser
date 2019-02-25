@@ -15,6 +15,10 @@ namespace resman {
 		loadImage("playfield");
 		loadImage("background");
 
+		loadImage("laser_straight");
+		loadImage("laser_sideways");
+		loadImage("laser_sideways_right");
+
 		loadTextures();
 		loadSprites();
 	}
