@@ -43,8 +43,8 @@ int resman::loadTextures(void) {
 	for (auto it = imageMap.begin(); it != imageMap.end(); it++) {
 		sf::Texture *texture = new sf::Texture;
 
-		(*texture).loadFromImage(*getImage((*it).first));
-		textureMap.emplace((*it).first, texture);
+		(*texture).loadFromImage(*getImage((*it).first)); // (*it).second is the image pointer
+		textureMap.emplace((*it).first, texture); // (*it).first is the image name (=> the texture name)
 	}
 }
 
@@ -55,8 +55,8 @@ int resman::loadSprites(void) {
 	for (auto it = textureMap.begin(); it != textureMap.end(); it++) {
 		sf::Sprite *sprite = new sf::Sprite;
 
-		(*sprite).setTexture(*(*it).second);
-		spriteMap.emplace((*it).first, sprite);
+		(*sprite).setTexture(*(*it).second); // (*it).second is the texture pointer
+		spriteMap.emplace((*it).first, sprite); // (*it).first is the texture name (=> the sprite name)
 	}
 }
 
