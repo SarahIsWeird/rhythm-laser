@@ -4,26 +4,10 @@
 		{
 			"label": "debug",
 			"type": "shell",
-			"command": "g++",
+			"command": "make",
 			"args": [
 				{
-					"value": "-std=c++17",
-					"quoting": "weak"
-				},
-				{
-					"value": "-o game.exe",
-					"quoting": "weak"
-				},
-				{
-					"value": "main.cpp renderer/renderer.cpp resman/resman.cpp logic/ingame.cpp logic/songloader.cpp logic/laser.cpp logic/events/eventhandler.cpp",
-					"quoting": "weak"
-				},
-				{
-					"value": "-I. -I\"F:\\Programming\\SFML-2.5.1\\include\"",
-					"quoting": "weak"
-				},
-				{
-					"value": "-L\"F:\\Programming\\SFML-2.5.1\\lib\" -lsfml-system-d -lsfml-window-d -lsfml-graphics-d-2 -lsfml-audio-d-2 -lsfml-network-d",
+					"value": "debug",
 					"quoting": "weak"
 				}
 			],

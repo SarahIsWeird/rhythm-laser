@@ -8,6 +8,8 @@
 
 #include <vector>
 
+#include <logger.hpp>
+
 namespace laser {
 	namespace wobbleDir {
 		enum wobbleDir {

@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-				"${workspaceFolder}/**",
+				"${workspaceFolder}/include",
 				"F:/Programming/SFML-2.5.1/include"
             ],
             "defines": [
@@ -15,7 +15,7 @@
             "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.15.26726/bin/Hostx64/x64/cl.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "msvc-x64"
+			"intelliSenseMode": "msvc-x64"
         }
     ],
     "version": 4

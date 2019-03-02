@@ -3,10 +3,17 @@
 #include <renderer/renderer.hpp>
 #include <resman/resman.hpp>
 #include <logic/events/eventhandler.hpp>
+#include <logger.hpp>
+
+#include <iostream>
 
 sf::RenderWindow mainWindow;
 
 int main(int argc, char **argv) {
+	if (Logger::initLogger() == 0) {
+		return 1;
+	}
+
     sf::RenderWindow window(sf::VideoMode(800, 600), "Yeet.");
 
 	window.setVerticalSyncEnabled(true);
@@ -25,6 +32,7 @@ int main(int argc, char **argv) {
 			case 0:
 				break;
 			case 1:
+				eventhandler::close(&window);
 				return 1;
 		}
     }

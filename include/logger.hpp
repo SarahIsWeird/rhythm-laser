@@ -8,9 +8,12 @@
 
 #include <direct.h>
 
+#include <resman/resman.hpp>
+
 namespace Logger {
 	int initLogger();
 
+	int write(std::string text);
 	int log(std::string text);
 
 	void endLog();

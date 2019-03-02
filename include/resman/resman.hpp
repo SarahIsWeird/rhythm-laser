@@ -8,6 +8,7 @@
 #include <SFML/Graphics.hpp>
 
 #include <logic/events/eventhandler.hpp>
+#include <logger.hpp>
 
 namespace resman {
 	int initialize(void);

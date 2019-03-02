@@ -11,8 +11,8 @@ namespace ingame {
 
 	sf::Vector2f getShipCoords(void);
 	
-	void changeShipPos(uint8_t newPos);
-	void changeShipPos(sf::Keyboard::Key key);
+	int changeShipPos(uint8_t newPos);
+	int changeShipPos(sf::Keyboard::Key key);
 
 	Laser *getLaser(uint8_t pos);
 }

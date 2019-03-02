@@ -6,7 +6,7 @@
 #include <SFML/Graphics.hpp>
 
 namespace eventhandler {
-	int registerCleanupFunction(void (*function)(void));
+	int registerCleanupFunction(void (*function)(void), const char *s);
 
 	int pushEvent(sf::Event::EventType event);
 

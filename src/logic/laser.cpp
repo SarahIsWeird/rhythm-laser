@@ -5,6 +5,7 @@ Laser::Laser(uint8_t pos) {
 }
 
 int Laser::shoot(size_t warmup, size_t length, laser::laserType_t laserType, laser::wobbleDir_t wobbleDirection) {
+	Logger::log("[Laser] Shooting!");
 	if (this->active)
 		return 1;
 	
